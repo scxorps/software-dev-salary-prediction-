@@ -34,7 +34,7 @@ def clean_education(x):
 def load_data():
     df = pd.read_csv("survey_results_public.csv")
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedCompYearly"]]
-    df = df[df["ConvertedComp"].notnull()]
+    df = df[df["ConvertedCompYearly"].notnull()]
     df = df.dropna()
     df = df[df["Employment"] == "Employed full-time"]
     df = df.drop("Employment", axis=1)
@@ -57,7 +57,7 @@ def show_explore_page():
 
     st.write(
         """
-    ### Stack Overflow Developer Survey 2023
+    ### Stack Overflow Developer Survey 2020
     """
     )
 
