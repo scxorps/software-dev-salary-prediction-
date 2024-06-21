@@ -36,7 +36,7 @@ def load_data():
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedCompYearly"]]
     df = df[df["ConvertedCompYearly"].notnull()]
     df = df.dropna()
-    df = df[df["Employment"] == "Employed full-time"]
+    df = df[df["Employment"] == "Employed, full-time"]
     df = df.drop("Employment", axis=1)
 
     country_map = shorten_categories(df.Country.value_counts(), 400)
