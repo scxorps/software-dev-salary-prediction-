@@ -33,7 +33,6 @@ def show_predict_page():
         "Poland",
         "Italy",
         "Sweden",
-        "Russian Federation",
     )
 
     education = (
