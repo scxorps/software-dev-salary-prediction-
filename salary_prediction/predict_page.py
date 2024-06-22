@@ -32,7 +32,6 @@ def show_predict_page():
         "Netherlands",
         "Poland",
         "Italy",
-        "Russian Federation",
         "Sweden",
     )
 
